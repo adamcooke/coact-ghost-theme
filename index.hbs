@@ -1,0 +1,30 @@
+{{!< default}}
+
+<div class='pageContent'>
+
+  <div class='welcomeText'>
+    <h1 class='welcomeText__text'>
+      <b>Welcome to the Coact Blog.</b>
+      Follow along as we build a new code hosting &amp; project management platform for developers worldwide.
+    </h1>
+  </div>
+
+
+  <div class='postsList'>
+    {{#foreach posts}}
+    <article class="postsList__post {{post_class}}">
+      <h2 class='postsList__postTitle'><a href="{{url}}">{{{title}}}</a></h2>
+      <section class="postsList__postExcerpt">
+          <p>{{excerpt words="50"}}&hellip;</p>
+      </section>
+      <p class="postsList__postMeta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time></p>
+    </article>
+    {{/foreach}}
+  </div>
+
+  <div class='postsFooter'>
+    {{pagination}}
+    <p class='postsFooter__viaduct'><a href='http://viaduct.io/refer/dc6a04'><img src='https://cdn.viaduct.io/hosted/small-grey.png' /></a></p>
+  </div>
+
+</div>
