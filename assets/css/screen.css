@@ -130,6 +130,55 @@ a { text-decoration: none;}
    width:26px;
 }
 
+.navigationContent__subscribeInputContainer {
+   margin-bottom:3px;
+}
+
+.navigationContent__subscribeInput {
+   background:#242931;
+   border:2px solid transparent;
+   border-radius:35px;
+   width:100%;
+   padding:7px 15px;
+   font:inherit;
+   font-size:13px;
+   color:#fff;
+}
+
+.navigationContent__subscribeInput::-webkit-input-placeholder {
+   color: #6D899B;
+}
+
+.navigationContent__subscribeInput:-moz-placeholder { /* Firefox 18- */
+   color: #6D899B;
+}
+
+.navigationContent__subscribeInput::-moz-placeholder {  /* Firefox 19+ */
+   color: #6D899B;
+}
+
+.navigationContent__subscribeInput:-ms-input-placeholder {
+   color: #6D899B;
+}
+
+.navigationContent__subscribeButtonContainer {
+   text-align: right;
+}
+
+.navigationContent__subscribeButtonContainer button {
+   border:0;
+   background:none;
+   color:#6D899B;
+   font:inherit;
+   font-size:11px;
+   font-weight:600;
+   appearance:none;
+}
+
+.navigationContent__subscribeInput:focus {
+   border-color:#fff;
+}
+
 #menuToggle {display:none;}
 #menuToggle:checked ~ .navigationContent__mobileMenu {
    display:block;
